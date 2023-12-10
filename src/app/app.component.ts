@@ -1,11 +1,17 @@
 import { Component, ViewChild } from '@angular/core';
 import { data } from './data';
-import { MtxGrid, MtxGridColumn } from '@ng-matero/extensions/grid';
+import {
+  MtxGrid,
+  MtxGridColumn,
+  MtxGridModule,
+} from '@ng-matero/extensions/grid';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [MtxGridModule],
 })
 export class AppComponent {
   title = 'matero-test';
@@ -47,18 +53,3 @@ export class AppComponent {
     console.log(e);
   }
 }
-
-/* 
-import { Component, ViewChild } from '@angular/core';
-import { EXAMPLE_DATA } from '../../data';
-import { MtxGridColumn, MtxGrid } from '@ng-matero/extensions/grid';
-
-@Component({
-  selector: 'data-grid-example',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-})
-export class AppComponent {
-
-}
-*/
