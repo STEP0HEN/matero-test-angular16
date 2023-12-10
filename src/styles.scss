@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+.mat-mdc-table {
+  background-color: deepskyblue !important;
+  color: black;
+}
+
+.mat-mdc-header-row {
+  color: black !important;
+}
+
+.mdc-data-table__content {
+  color: black;
+}
+
+.mat-mdc-outlined-button .mdc-button__label {
+  z-index: 1;
+  color: black;
+  border-color: green;
+  background: lightgrey;
+  padding: 8px;
+  border-radius: 10px;
+}
+.mat-elevation-z8,
+.mat-mdc-elevation-specific.mat-elevation-z8 {
+  background-color: lightcoral;
+}
