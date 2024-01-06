@@ -15,6 +15,12 @@ import {
 })
 export class AppComponent {
   title = 'matero-test';
+  list = data;
+
+  columnPinnable = false;
+  columnSortable = true;
+  columnHideable = true;
+  columnHideableChecked: 'show' | 'hide' = 'show';
 
   @ViewChild('grid') grid!: MtxGrid;
 
@@ -38,18 +44,9 @@ export class AppComponent {
     { header: 'City', field: 'city' },
   ];
 
-  list = data;
-
-  columnPinnable = false;
-  columnSortable = true;
-  columnHideable = true;
-  columnHideableChecked: 'show' | 'hide' = 'show';
-
   closeMenu() {
     this.grid.columnMenu.menuTrigger.closeMenu();
   }
 
-  log(e: any) {
-    console.log(e);
-  }
+  log(e: any) {}
 }
